@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/favorite_title" android:id="@+id/favoriteFragment" android:icon="@drawable/ic_favorite"/>
+    <item android:title="@string/add_vocabulary_text" android:id="@+id/addVocabularyFragment"
+          android:icon="@drawable/ic_add_vocabulary"/>
+    <!--<item android:title="@string/setting_title" android:id="@+id/settings_item" android:icon="@drawable/ic_settings"/>-->
+    <!--<item android:title="@string/history_title" android:id="@+id/historyFragment"-->
+          <!--android:icon="@drawable/ic_history_black"/>-->
+    <item android:title="@string/about_text" android:id="@+id/aboutFragment" android:icon="@drawable/ic_info"/>
+</menu>

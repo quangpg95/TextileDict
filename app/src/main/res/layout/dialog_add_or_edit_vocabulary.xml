@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="vocabulary" type="com.qpower.textiledict.database.Vocabulary"/>
+    </data>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/header_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorAccent"
+                android:textAlignment="center"
+                android:text="@string/add_vocabulary_text"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextInputLayoutAppearance"
+                        app:endIconMode="clear_text"
+                >
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/words_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lobster_two"
+                            android:text="@{vocabulary.title}"
+                            android:theme="@style/TextInputLayoutAppearance"
+                            android:hint="@string/words_text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAutoCompleteAppearance"
+                        app:endIconMode="dropdown_menu">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                            android:id="@+id/filled_exposed_dropdown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/TextInputLayoutAppearance"
+                            android:fontFamily="@font/lobster_two"
+                            typeAutoText="@{vocabulary.type}"
+                            android:editable="false"
+                            android:hint="@string/type_text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextInputLayoutAppearance"
+                        app:endIconMode="clear_text"
+                >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lobster_two"
+                            android:theme="@style/TextInputLayoutAppearance"
+                            android:text="@{vocabulary.means}"
+                            android:id="@+id/means_input"
+                            android:hint="@string/means_text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextInputLayoutAppearance"
+                        app:endIconMode="clear_text"
+                >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/spelling_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/TextInputLayoutAppearance"
+                            android:text="@{vocabulary.spelling}"
+                            android:fontFamily="@font/lobster_two"
+                            android:hint="@string/spelling_text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

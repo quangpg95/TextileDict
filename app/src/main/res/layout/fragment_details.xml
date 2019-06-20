@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="viewModel"
+                  type="com.qpower.textiledict.view_model.DetailsViewModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_volume_up"
+                android:id="@+id/speaker_image"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/space" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                spelling="@{viewModel.vocabularyLive.spelling}"
+                app:layout_constraintTop_toTopOf="@+id/speaker_image"
+                app:layout_constraintStart_toEndOf="@+id/speaker_image"
+                android:layout_marginStart="16dp" android:textStyle="italic" tools:text="@tools:sample/lorem"
+                app:layout_constraintBottom_toBottomOf="@+id/speaker_image" android:textSize="16sp"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.vocabularyLive.title}"
+                android:id="@+id/textView4" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" android:textAlignment="center" android:textSize="24sp"
+                android:textColor="@color/design_default_color_on_secondary" android:textStyle="bold"
+                tools:text="Weft backed weave fabric"/>
+        <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" android:layout_marginTop="16dp" android:id="@+id/space"
+                android:background="@color/secondaryTextColor"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                type="@{viewModel.vocabularyLive.type}"
+                android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/speaker_image"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" tools:text="Noun"
+                android:textStyle="bold" android:textSize="16sp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                android:text="@{viewModel.vocabularyLive.means}"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" android:layout_marginTop="16dp"
+                tools:text="Vải dệt thêu sợi ngang" android:textSize="20sp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                app:srcCompat="@drawable/ic_edit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

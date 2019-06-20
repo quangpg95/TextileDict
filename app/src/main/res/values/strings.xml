@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Textile Dict</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_des">Search</string>
+    <string name="search_hint">Type word…</string>
+    <string name="noun_text">Noun</string>
+    <string name="verb_text">Verd</string>
+    <string name="adj_text">Adjective</string>
+    <string name="details_text">Details</string>
+    <string name="non_spelling_text">No spelling</string>
+    <string name="favorite_title">Favorite</string>
+    <string name="history_title">History</string>
+    <string name="setting_title">Settings</string>
+    <string name="keyboard_voice_text">Keyboard voice</string>
+    <string name="about_text">About</string>
+    <string name="about_info_text">Textile Dict was created with the aim to help textile majors look up English words in
+        an easy and understandable way. The application has absolutely no ads, is not created for the purpose of making
+        money. However, I still listen to your suggestions to make the application more and more perfect, and I promise
+        to spend as much time as possible to perfect the application according to your suggestions that I can do. Any
+        comments please leave a comment below the application or send a mail to devhw95@gmail.com.
+    </string>
+    <string name="author_text">Commenter: Le Thi Ai Linh - Sewing technology K61 - Hanoi University of Science and
+        Technology.
+    </string>
+    <string name="favorite_empty">A list of favorite words will appear here.</string>
+    <string name="recent_empty_text">A list of recent words will appear here.</string>
+    <string name="add_empty_text">A list of newly added vocabulary will appear here. Click the + button to add
+        vocabulary.
+    </string>
+    <string name="add_vocabulary_text">Add Vocabulary</string>
+    <string name="words_text">Word</string>
+    <string name="means_text">Means</string>
+    <string name="spelling_text">Spelling</string>
+    <string name="positive_text">OK</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="type_text">Type</string>
+    <string name="empty_error_message">Not Empty</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">This device not supported.</string>
+    <string name="no_results_text">No results have been found.</string>
+</resources>

@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryLightColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryLightColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:textColorSecondary">@color/primaryTextColor</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="colorControlActivated">#ffffff</item>
+        <item name="android:fontFamily">@font/lobster_two</item>
+        <item name="android:textColorHint">@color/text_hint_color</item>
+        <item name="fontFamily">@font/lobster_two</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="TestTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#008577</item>
+        <item name="colorPrimaryDark">#00574B</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TextInputLayoutAppearance" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/lobster_two</item>
+        <item name="fontFamily">@font/lobster_two</item>
+    </style>
+
+    <style name="TextAutoCompleteAppearance"
+           parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/lobster_two</item>
+        <item name="fontFamily">@font/lobster_two</item>
+        <item name="endIconTint">@color/nav_item_color</item>
+    </style>
+
+</resources>

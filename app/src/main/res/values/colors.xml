@@ -1,0 +1,14 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<resources>
+    <color name="primaryColor">#d81b60</color>
+    <color name="primaryLightColor">#ff5c8d</color>
+    <color name="primaryDarkColor">#d81b60</color>
+    <color name="secondaryColor">#d81b60</color>
+    <color name="secondaryLightColor">#ff5c8d</color>
+    <color name="secondaryDarkColor">#d81b60</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#ffffff</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="nav_item_color">#5f6368</color>
+    <color name="text_hint_color">#50ffffff</color>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph" app:startDestination="@id/homeFragment" android:label="@string/about_text">
+
+    <fragment android:id="@+id/homeFragment"
+              android:name="com.qpower.textiledict.ui.home.HomeFragment"
+              tools:layout="@layout/fragment_home"
+    >
+        <action android:id="@+id/action_homeFragment_to_detailsFragment" app:destination="@id/detailsFragment"/>
+    </fragment>
+    <fragment android:id="@+id/detailsFragment"
+              android:name="com.qpower.textiledict.ui.details.DetailsFragment"
+              tools:layout="@layout/fragment_details"
+              android:label="@string/details_text">
+        <argument android:name="vocabulary" app:argType="com.qpower.textiledict.database.Vocabulary"/>
+    </fragment>
+    <fragment android:id="@+id/favoriteFragment"
+              tools:layout="@layout/fragment_favorite"
+              android:name="com.qpower.textiledict.ui.favorite.FavoriteFragment"
+              android:label="@string/favorite_title">
+        <action android:id="@+id/action_favoriteFragment_to_detailsFragment" app:destination="@id/detailsFragment"/>
+    </fragment>
+    <fragment android:id="@+id/historyFragment"
+              android:name="com.qpower.textiledict.ui.history.HistoryFragment"
+              tools:layout="@layout/fragment_home"
+              android:label="@string/history_title">
+        <action android:id="@+id/action_historyFragment_to_detailsFragment" app:destination="@id/detailsFragment"/>
+    </fragment>
+    <fragment android:id="@+id/aboutFragment"
+              android:name="com.qpower.textiledict.ui.about.AboutFragment"
+              tools:layout="@layout/fragment_about"
+              android:label="@string/about_text"/>
+    <fragment android:id="@+id/addVocabularyFragment"
+              tools:layout="@layout/fragment_add_vocabulary"
+              android:name="com.qpower.textiledict.ui.add_vocabulary.AddVocabularyFragment"
+              android:label="@string/add_vocabulary_text">
+        <action android:id="@+id/action_addVocabularyFragment_to_detailsFragment"
+                app:destination="@id/detailsFragment"/>
+    </fragment>
+</navigation>

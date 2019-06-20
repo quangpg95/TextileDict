@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Từ điển dệt may</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="search_des">Tìm kiếm</string>
+    <string name="search_hint">Chạm để tra từ điển</string>
+    <string name="noun_text">Danh từ</string>
+    <string name="verb_text">Động từ</string>
+    <string name="adj_text">Tính từ</string>
+    <string name="details_text">Chi tiết</string>
+    <string name="non_spelling_text">Chưa có phiên âm</string>
+    <string name="favorite_title">Yêu thích</string>
+    <string name="history_title">Lịch sử</string>
+    <string name="setting_title">Cài đặt</string>
+    <string name="keyboard_voice_text">Hộp thoại giọng nói</string>
+    <string name="about_text">Giới thiệu</string>
+    <string name="about_info_text">Textile Dict được tạo ra với mục đích giúp những người học chuyên ngành dệt may tra
+        cứu từ ngữ chuyên ngành tiếng anh 1 cách dễ dàng và dễ hiểu hơn. Ứng dụng hoàn toàn không có quảng cáo, không
+        được tạo ra với mục đích kiếm tiền. Tuy nhiên mình vẫn lắng nghe các góp ý từ các bạn để ứng dụng ngày càng hoàn
+        thiện hơn, và mình hứa sẽ dành thời gian nhiều nhất có thể để hoàn thiện ứng dụng theo những góp ý từ các bạn mà
+        mình có khả năng làm được. Mọi góp ý xin hãy để lại bình luận bên dưới ứng dụng hoặc gửi thư về mail
+        devhw95@gmail.com.
+    </string>
+    <string name="author_text">Góp ý: Lê Thị Ái Linh - Công nghệ may K61 - Đại học Bách Khoa Hà Nội.</string>
+    <string name="favorite_empty">Danh sách các từ vựng yêu thích sẽ xuất hiện tại đây.</string>
+    <string name="recent_empty_text">Danh sách các từ vựng mới tra sẽ xuất hiện tại đây.</string>
+    <string name="add_empty_text">Danh sách các từ vựng đã được thêm mới sẽ xuất hiện tại đây. Nhấn vào nút + để thêm từ
+        vựng.
+    </string>
+    <string name="add_vocabulary_text">Thêm từ vựng</string>
+    <string name="words_text">Từ</string>
+    <string name="means_text">Nghĩa</string>
+    <string name="spelling_text">Phiên âm</string>
+    <string name="positive_text">OK</string>
+    <string name="cancel_text">Hủy</string>
+    <string name="type_text">Loại từ</string>
+    <string name="empty_error_message">Không để trống</string>
+    <string name="speech_prompt">Nói gì đó&#8230;</string>
+    <string name="speech_not_supported">Thiết bị không được hỗ trợ.</string>
+    <string name="no_results_text">Không tìm thấy kết quả nào.</string>
+</resources>

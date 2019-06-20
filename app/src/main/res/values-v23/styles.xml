@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryLightColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryLightColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:fontFamily">@font/lobster_two</item>
+        <item name="fontFamily">@font/lobster_two</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="TestTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#008577</item>
+        <item name="colorPrimaryDark">#00574B</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TestTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="TestTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="TextInputLayoutAppearance" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/lobster_two</item>
+        <item name="fontFamily">@font/lobster_two</item>
+    </style>
+
+    <style name="TextAutoCompleteAppearance"
+           parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/lobster_two</item>
+        <item name="fontFamily">@font/lobster_two</item>
+        <item name="endIconTint">@color/primaryTextColor</item>
+    </style>
+</resources>
