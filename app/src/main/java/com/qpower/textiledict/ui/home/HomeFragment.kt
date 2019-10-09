@@ -75,16 +75,6 @@ class HomeFragment : BaseFragment(), SearchView.OnQueryTextListener {
                 }
             }
         })
-        viewModel.vocabularies.observe(this, Observer {
-//            Log.d("QuangNDb:", "load database: ${it.size}")
-        })
-
-        viewModel.test.observe(this, Observer {
-            Log.d("QuangNDb:", "load test: ${it.size}")
-        })
-        viewModel.vocatest.observe(this, Observer {
-//            Log.d("QuangNDb:", "load testX: ${it.size}")
-        })
         (activity as AppCompatActivity).supportActionBar?.setDisplayShowTitleEnabled(false)
         setHasOptionsMenu(true)
         return binding.root
