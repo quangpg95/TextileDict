@@ -52,17 +52,17 @@ class MainActivity : AppCompatActivity() {
             override fun onDrawerOpened(drawerView: View) {
                 super.onDrawerOpened(drawerView)
                 val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-                inputMethodManager.let {
+                currentFocus?.let {
+                    inputMethodManager.hideSoftInputFromWindow(it.windowToken, 0)
                 }
-                inputMethodManager.hideSoftInputFromWindow(currentFocus!!.windowToken, 0)
             }
 
             override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
                 super.onDrawerSlide(drawerView, slideOffset)
                 val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-                inputMethodManager.let {
+                currentFocus?.let {
+                    inputMethodManager.hideSoftInputFromWindow(it.windowToken, 0)
                 }
-                inputMethodManager.hideSoftInputFromWindow(currentFocus!!.windowToken, 0)
             }
         }
         navDrawer.addDrawerListener(actionBarDrawerToggle)

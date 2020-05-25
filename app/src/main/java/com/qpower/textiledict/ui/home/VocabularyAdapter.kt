@@ -66,19 +66,6 @@ class VocabularyAdapter(private val clickListener: OnClickListener) :
                 })
             }
             binding.executePendingBindings()
-//            if (word.isNotEmpty()) {
-//                val startPos = vocabulary.title.toLowerCase().indexOf(word.toLowerCase())
-//                val endPos = startPos + word.length
-//                if (startPos != -1) {
-//                    val spannable = SpannableString(vocabulary.title)
-//                    val span =
-//                        ForegroundColorSpan(ContextCompat.getColor(binding.textView.context, R.color.colorAccent))
-//                    spannable.setSpan(span, startPos, endPos, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
-//                    binding.textView.text = spannable
-//                }
-//            } else {
-//                binding.textView.text = vocabulary.title
-//            }
         }
     }
 

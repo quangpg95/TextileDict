@@ -18,8 +18,6 @@ import com.qpower.textiledict.ui.home.VocabularyStatus
 open class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository = VocabularyRepository(getDatabase(application).vocabularyDao)
-
-
     private val _vocabularyStatus = MutableLiveData<VocabularyStatus>()
     val vocabularyStatus: LiveData<VocabularyStatus> get() = _vocabularyStatus
 
@@ -27,24 +25,12 @@ open class HomeViewModel(application: Application) : AndroidViewModel(applicatio
 
     val searchWord: LiveData<String> get() = _searchWord
 
-    val test : LiveData<PagedList<Vocabulary>> = repository.getTests()
-
-    val testX:List<Vocabulary> = listOf()
-
-
     private val vocabulariesResult: LiveData<VocabularySearchResult> = Transformations.map(searchWord) { word ->
-        Log.d("QuangNDb:", "search $word ")
         repository.search(word, vocabularyStatus.value ?: VocabularyStatus.RECENT)
     }
 
     val vocabularies: LiveData<PagedList<Vocabulary>> = Transformations.switchMap(vocabulariesResult) {
-        Log.d("QuangNDb:", "hello: ")
         it.data
-    }
-
-    val vocatest: LiveData<List<Vocabulary>> = Transformations.map(vocabularies){
-        Log.d("QuangNDb:", "vocatest ${it.size} ")
-        testX
     }
 
     init {
@@ -59,7 +45,6 @@ open class HomeViewModel(application: Application) : AndroidViewModel(applicatio
 
     protected fun updateStatus(vocabularyStatus: VocabularyStatus) {
         if (vocabularyStatus != _vocabularyStatus.value) {
-//            Log.d("QuangNDb:", "updateSearch: ${vocabularyStatus.name}")
             _vocabularyStatus.value = vocabularyStatus
         }
     }
